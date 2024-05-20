@@ -2,7 +2,8 @@
 'use client'
 
 import { ChakraProvider } from '@chakra-ui/react'
+import { ClerkProvider } from '@clerk/nextjs'
 
 export function Providers({ children }: { children: React.ReactNode }) {
-    return <ChakraProvider>{children}</ChakraProvider>
+    return <ChakraProvider><ClerkProvider>{children}</ClerkProvider></ChakraProvider>
 }
