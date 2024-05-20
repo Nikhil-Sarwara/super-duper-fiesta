@@ -23,6 +23,7 @@ export const MarketingHero = () => {
                         colorScheme="blue"
                         size="lg"
                         variant="solid"
+                        rounded={"full"}
                     >
                         Get Started
                     </Button>
