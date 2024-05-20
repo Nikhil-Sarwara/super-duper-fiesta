@@ -1,3 +1,4 @@
+import { MarketingHero } from "@/components/(Marketing)/Hero/hero";
 import MarketingNavbar from "@/components/(Marketing)/NavigationBar/navbar";
 import { Container, Flex } from "@chakra-ui/react";
 
@@ -6,8 +7,7 @@ const MarketingHome = () => {
         <main>
             <Container maxW="container.xl">
                 <MarketingNavbar />
-                <h1>Marketing</h1>
-                <p>This is the marketing home page</p>
+                <MarketingHero />
             </Container>
         </main>
     );
