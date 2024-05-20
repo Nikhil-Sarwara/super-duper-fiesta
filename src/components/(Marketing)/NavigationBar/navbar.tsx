@@ -12,7 +12,7 @@ const MarketingNavbar = () => (
             </Link>
 
             <Heading>
-                Resume Builder
+                Resume Review
             </Heading>
 
             <Flex gap={"1rem"}>
