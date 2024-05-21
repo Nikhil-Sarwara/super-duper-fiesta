@@ -6,7 +6,7 @@ import { DashboardSidebar } from "@/components/(Dashboard)/Sidebar/sidebar";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     return (
-        <Flex h="100vh" w={"full"} direction={{ base: "column", md: "row" }}>
+        <Flex h="100vh" w={"full"} direction={"column"}>
             {/* Sidebar */}
             <DashboardSidebar />
 
