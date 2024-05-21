@@ -20,7 +20,7 @@ import { Line } from 'react-chartjs-2';
 
 const Dashboard = () => {
   return (
-    <Flex height="100vh" bg="gray.200" >
+    <Flex height="100vh" bg="gray.200">
       {/* Main Content */}
       <Box flex="1" p="6" overflow="scroll">
         <Flex justify="space-between" align="center" mb="8">
