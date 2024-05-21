@@ -1,20 +1,16 @@
-"use client"
-
-import { Box, Flex, Heading, VStack } from "@chakra-ui/react";
-import { Link } from "@chakra-ui/next-js";
-import { DashboardSidebar } from "@/components/(Dashboard)/Sidebar/sidebar";
+import DashboardNavbar from "@/components/(Dashboard)/Navbar/navbar";
+import { Container } from "@chakra-ui/react";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     return (
-        <Flex h="100vh" w={"full"} direction={"column"}>
-            {/* Sidebar */}
-            <DashboardSidebar />
+        <main>
+            {/* Navbar */}
+            <DashboardNavbar />
 
-            {/* Main Content */}
-            <Flex backgroundColor={"gray.100"} flex="1" p="6" direction={"column"}>
+            <Container maxW="container.xl" marginY={"1rem"}>
                 {children}
-            </Flex>
-        </Flex>
+            </Container>
+        </main>
     );
 };
 

@@ -1,12 +1,14 @@
 import { Flex } from "@chakra-ui/react";
 import { UserProfile } from "@clerk/nextjs";
 
-const Settings = () => {
+const DashboardSettings = () => {
     return (
-        <Flex margin={"2rem"}>
-            <UserProfile routing="hash" />
-        </Flex>
+        <main>
+            <Flex marginX={"auto"} marginY={"1rem"} width={"100%"} height={"100%"} justifyContent={"center"}>
+                <UserProfile routing="hash" />
+            </Flex>
+        </main>
     );
 };
 
-export default Settings;
+export default DashboardSettings;
