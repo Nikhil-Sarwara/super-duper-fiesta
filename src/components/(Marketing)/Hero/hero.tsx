@@ -4,6 +4,7 @@ import {
     Flex,
     Heading,
     Image,
+    Link,
     Text,
 } from "@chakra-ui/react";
 
@@ -19,14 +20,16 @@ export const MarketingHero = () => {
                         Get started with our easy-to-use resume builder and get hired
                         faster.
                     </Text>
-                    <Button
-                        colorScheme="blue"
-                        size="lg"
-                        variant="solid"
-                        rounded={"full"}
-                    >
-                        Get Started
-                    </Button>
+                    <Link href="/sign-in">
+                        <Button
+                            colorScheme="blue"
+                            size="lg"
+                            variant="solid"
+                            rounded={"full"}
+                        >
+                            Get Started
+                        </Button>
+                    </Link>
                 </Box>
                 <Image
                     src="https://play-lh.googleusercontent.com/9cStI0kHWmjALUEVwZwkuPhkwtuesVwSgQeHUA4YEqGRzF31yXYjjdpAQkW5DGqp2dE"
