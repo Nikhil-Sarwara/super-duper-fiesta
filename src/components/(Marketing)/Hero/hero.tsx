@@ -20,7 +20,7 @@ export const MarketingHero = () => {
                         Get started with our easy-to-use resume builder and get hired
                         faster.
                     </Text>
-                    <Link href="/sign-in">
+                    <Link href="/authentication/sign-in">
                         <Button
                             colorScheme="blue"
                             size="lg"
