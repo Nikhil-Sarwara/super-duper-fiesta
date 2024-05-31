@@ -47,7 +47,8 @@ export async function POST(request: Request) {
     const formData = await request.formData();
     console.log(formData.get("email"));
 
-    const resume = formData.get("resume");
+  // Get the body of the Request
+  const body = await request.formData();
 
     if (resume && resume instanceof File) {
       // Convert the File to an ArrayBuffer

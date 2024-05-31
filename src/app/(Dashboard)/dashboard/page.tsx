@@ -14,16 +14,19 @@ const Dashboard = () => {
     if (!file) {
       return
     }
-    const formData = new FormData();
-    formData.append('file', file);
 
-    const response = await fetch('/api/upload', {
+    // Create form data
+    const data = new FormData();
+    data.append('file', file);
+
+    // Create fetch api to api/upload
+    const response = await fetch('api/upload', {
       method: 'POST',
-      body: formData
+      body: data
     });
 
-    const data = await response.json();
-    console.log(data);
+    // Print the response
+    console.log(response);
   };
 
   return (
